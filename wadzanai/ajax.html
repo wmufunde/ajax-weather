@@ -1,21 +1,76 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
-        <title> The Open Weather API</title>
+        <title> 2 Day Weather App</title>
+        
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+   
+   <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1> The Open Weather API</h1>
+       <div class = "container">
+    
+    <div class = "row" id = "weather-app">
+      <div class = "col-xs-12 col-md-12">
+        <h1> Weather App</h1>
+        
+         
+        
         <p> Please enter a city: <input id = "theCity" type="text"> <button id = "myButton"> Enter</button></p>
-        <div> <img id ="imageToday" class = "weatherImg"></div>
         
-        <p> Highest temperature today:</p>
-        <div id = "highToday"></div>
+        </div>
+    </div>
+       
+        <div class = "container">
+            <div class = "row">
+               <div class = "col-xs-12 col-sm-12 col-md-6">
+                    <div class ="border">
+                        <div class ="words">
         
-        <p> Lowest temperature today:</p>
-        <div id = "lowToday"></div>
+                            <div> <img id ="imageToday" class = "weatherImg"></div>
         
-        <p> Weather Descirption:</p>
-        <div id = "dayDescription"></div>
+                            <p> Highest temperature today:</p>
+                            <div id = "highToday"></div>
         
+                            <p> Lowest temperature today:</p>
+                            <div id = "lowToday"></div>
+        
+                            <p> Weather Description:</p>
+                            <div id = "dayDescription"></div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+            <div class = "col-xs-12 col-sm-6 col-md-6">
+        <div class = "border">
+            <div class ="words">
+            <div> <img id ="imageToday2" class = "weatherImg"></div>
+            
+            <p> Highest temperature tomorrow </p>
+            <div id = "highToday2"></div>
+            
+            <p> Lowest temperature tomorrow:</p>
+            <div id = "lowToday2"></div>
+        
+            <p> Weather Description:</p>
+            <div id = "dayDescription2"></div>
+            
+            </div>
+                </div>
+        </div>
+            </div>
+           </div>
         <script src = "myScript.js"></script>
+        <link rel="stylesheet" href="style.css">
+        </div>
     </body>
+    
+</html>

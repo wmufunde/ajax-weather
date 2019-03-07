@@ -34,8 +34,18 @@ function getWeather() {
             
             document.getElementById("lowToday").innerHTML = myData.list[0].main.temp_min + "&deg;C";
             
-            document.getElementById("dayDescription").innerHTML = myData.list[0].description + "&deg;C";
+            document.getElementById("dayDescription").innerHTML = myData.list["0"].weather["0"].description;
             
+            
+            var weatherImage = "http://api.openweathermap.org/img/w/"+myData.list["1"].weather["0"].icon+ ".png";
+            
+            document.getElementById("imageToday2").src = weatherImage;
+            
+            document.getElementById("highToday2").innerHTML = myData.list[1].main.temp_max + "&deg;C";
+            
+            document.getElementById("lowToday2").innerHTML = myData.list[1].main.temp_min + "&deg;C";
+            
+            document.getElementById("dayDescription2").innerHTML = myData.list["1"].weather["0"].description;
 
             
             
